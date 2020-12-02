@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,12 +10,12 @@
 <body bgcolor="#FFA2F8">
     <div class="container">
         <h1>Crea tu cuenta</h1>
-        <input type="text" class="text" placeholder="Nombre de usuario ">
-        <input type="email" class="email" placeholder="correo electronico">
-        <input type="password" class="password" placeholder="contraseña">
-        <input type="password" class="password1" placeholder="confirma tu contraseña">
-        <button class="button" onclick="location.href='com.html'" >INGRESAR</button>
-        
+        <form method="get" action="registro.php">        
+        <input type="text" class="text" placeholder="Nombre de usuario" name="nombre">
+        <input type="email" class="email" placeholder="correo electronico" name="correo">
+        <input type="password" class="password" placeholder="contraseña" name="contraseña">
+        <button type="submit" class="button">Enviar</button>
+        </form>
     </div>
 </body>
 </html>

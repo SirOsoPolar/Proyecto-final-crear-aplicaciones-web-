@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="aa.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+    </head>
+    <body>
+        
+        <div id="hola">
+        <canvas id="myChart" width="150" height="150"></canvas>
+      </div> 
+      
+    </body>
+    <div id="hola">
+    <script width="150px">
+        
+        var ctx= document.getElementById("myChart").getContext("2d");
+        var myChart= new Chart(ctx,{
+            type:"bar",
+            data:{ 
+            labels:['Semana1','Semana2','Semana3','Semana4','Semana5'],
+                datasets:[{
+                        label:'Foto 1',
+                        data:[10,2,15,5,12],
+                        backgroundColor:[
+                            '#938AB4 ',
+                            '#97B48A ',
+                            '#9F8BA5 ',
+                            '#AFC9CB ',
+                            '#DEBA5C '
+                        ]
+                }]
+            },
+            options:{
+                scales:{
+                    yAxes:[{
+                            ticks:{
+                                beginAtZero:true
+                            }
+                    }]
+                }
+            }
+        });
+    </script>
+    </div>
+</html>

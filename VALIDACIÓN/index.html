@@ -9,12 +9,12 @@
 </head>
 <body bgcolor="#FFA2F8">
     <div class="container">
-        <h1 >Inicio De Sesion</h1>
-        <input type="email" class="email" placeholder="cooreo electronico">
-        <input type="password" class="password" placeholder="contraseña">
-        <button class="button" onclick="location.href='index1.html'" >INGRESAR</button>
-        
-        <a href="reg.html">¿Aun no tienes cunta?</a>
+        <h1>Crea tu cuenta</h1>
+        <form method="get" action="logear.php">        
+        <input type="text" class="text" placeholder="Nombre de usuario" name="nombre">
+        <input type="password" class="password" placeholder="contraseña" name="contraseña">
+        <button type="submit" class="button">Enviar</button>
+        </form>
     </div>
 </body>
 </html>

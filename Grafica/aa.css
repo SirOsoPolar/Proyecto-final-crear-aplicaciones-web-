@@ -1,0 +1,18 @@
+.dos{
+	z-index: 1;
+margin-left: 1cm;
+margin-top: 2cm;
+}
+#hola{
+	width: 500px ; /* Con esto se cambia el tamaño de la grafica*/
+	height:500px;  /* Con esto se cambia el tamaño de la grafica*/
+	border-width: 200px;
+	z-index: 2;
+	margin-top: 6cm;
+	margin-left: 6cm;
+margin-right: 6cm;
+	border-color: #8D5589;
+}
+.uno{
+	z-index: 3;
+}

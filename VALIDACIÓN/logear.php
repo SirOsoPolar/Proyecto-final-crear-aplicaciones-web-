@@ -1,14 +1,21 @@
 <?php
 		include("conexion.php");
+        session_start();
+
         $nombreC=@$_GET['nombre'];
 		$contraC=@$_GET['contraseña'];
-		$resultados = mysqli_query($conexion,"SELECT * FROM usuario WHERE pass = '$contraC'");
-		while($consulta = mysqli_fetch_array($resultados)){
-			$usuario = $consulta['pass'];
-			if ($usuario == $nombreC){
-				echo "conectaod";
-				header('Location: https://www.youtube.com/watch?v=uKxyLmbOc0Q');
-			}
+
+		$q = "SELECT COUNT(*) as contar FROM usuario WHERE nombre_usuario = '$nombreC' AND pass = '$contraC'";
+		$consulta= mysqli_query($conexion,$q);
+		$array = mysqli_fetch_array($consulta);
+		
+		if($array['contar']>0){
+			$_SESSION['username']=$nombreC;
+           header("location: sesion.php");
+		}else{
+			echo "datos incorrectos";
 		}
-        include("cerrar_conexion.php")
-?>
+
+
+		
+?> 

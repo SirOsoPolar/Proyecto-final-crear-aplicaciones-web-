@@ -10,7 +10,7 @@ $conexion =  mysqli_connect($server,$user,$pass,$db);
 if(!$conexion){
     die("La conexion a fallado". $conexion ->connect_error);
 }else{
-    echo "conectado parse";
+    echo "";
 }
 
 ?>
